@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #E5E5E5;
+}
+header{
+    width: 100%;
+    padding: 50px 0;
+}
+header img{
+    margin-left: 60px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+section .col-area{
+    width: 70%;
+    padding: 0 100px;
+}
+section .col-area .formulario input{
+    display: block;
+
+}
+section .col-area .formulario textarea{
+    width: 100%;
+    resize: none;
+    margin-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #0A3871;
+    outline-color: #D8DFE8;
+    background: #E5E5E5;
+    border: none;
+}
+section .col-area .formulario textarea:focus{
+    border: none;
+}
+section .col-area .formulario div{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+section .col-area h2{
+    font-size: 15px;
+    color: #0A3871;
+}
+section .col-area .formulario input[type=submit]{
+    width: 440px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+section .col-area .formulario .btnDesencriptar{
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+section .col-area .formulario .btnEncriptar{
+    background: #0A3871;
+    color: #D8DFE8;
+    border: 2px solid #0A3871;
+}
+section .col-aside{
+    width: 30%;
+    display:grid;
+    place-content:center;
+    border-radius: 30px;
+    background: #fff;
+    margin-right: 40px;
+    padding: 25px;
+}
+section .col-aside h3{
+    text-align: center;
+}
+section .col-aside p{
+    text-align: center;
+}
+section .col-aside .formulario{
+display: none;
+}
+section .col-aside textarea{
+    width: 100%;
+    resize: none;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #0A3871;
+    outline-color: #FFF;
+    border: none;
+}
+section .col-aside textarea:focus{
+    border: none;
+}
+section .col-aside input[type=submit]{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: #fff;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+/*-----------------------MEDIA QUERIES 800px----------------------*/
+@media screen and (max-width: 800px) {
+    header{
+        width: 100%;
+        padding: 10px 0;
+    }
+    section{
+        display:block;
+    }
+    section .col-area{
+        width: 95%;
+        padding: 10px 20px;
+    }
+    section .col-area .formulario textarea{
+        height: 400px;
+        margin-bottom: 10px;
+    }
+    section .col-area .formulario div{
+        display: flex;
+        justify-content: space-between;
+    }
+    section .col-area .formulario input[type=button]{
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 10px;
+        margin: 0;
+    }
+    section .col-area .formulario div .btnDesencriptar{
+        margin-left:  30px;
+    }
+    section .col-aside{
+        width: 89%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    section .col-aside img{
+        display: none;
+    }
+}
+/*-----------------------MEDIA QUERIES 400px----------------------*/
+@media screen and (max-width: 400px) {
+    header img{
+        margin-left: 30px;
+    }
+    section .col-area{
+        width: 90%;
+        padding: 0 20px;
+    }
+    section .col-area .formulario div{
+        display: block;
+     }
+    section .col-area h2{
+        font-size: 13px;
+        color: #0A3871;
+    }
+    section .col-area .formulario input[type=button]{
+        margin: 0;
+    }
+    section .col-area .formulario div .btnDesencriptar{
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+    section .col-area .formulario div .btnEncriptar {
+        width: 100%;
+    }
+    section .col-aside{
+        width: 83%;
+        margin-left: 10px;
+    }
+}
